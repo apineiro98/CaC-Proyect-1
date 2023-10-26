@@ -1,8 +1,8 @@
-import './NavBar.css'
+import './AddSearchTest.css'
 import { useMemo, useState } from 'react'
 import { useRef } from 'react'
 
-function NavBar() {
+function AddSearchTest() {
   const [items, setItems] = useState([])
   //Captura el valor del input de busqueda.
   const [query, setQuery] = useState("")
@@ -15,7 +15,6 @@ function NavBar() {
       return item.toLowerCase().includes(query.toLowerCase())
     })
   }, [items, query])
-
 
   function onSubmit(e) {
     e.preventDefault();
@@ -40,17 +39,10 @@ function NavBar() {
 
   return (
     <>
-      <header className='header'>
-        <section className='container'>
-          <a href="index.html">
-            <h1>LOGO</h1>
-          </a>
-          <form className='search-form' onSubmit={onSubmit}>
-            <input ref={inputRef} type="search" name="search" />
-            <button type='submit' >Agregar</button>
-          </form>
-        </section>
-      </header>
+      <form className='search-form' onSubmit={onSubmit}>
+        <input ref={inputRef} type="search" name="search" />
+        <button type='submit' >Agregar</button>
+      </form>
       Buscar:
       <input value={query} type="search" onChange={e => setQuery(e.target.value)}/>
       <h2>Tu busqueda fue:
@@ -64,9 +56,8 @@ function NavBar() {
           }
         )}
       </h2>
-      
     </>
   )
 }
 
-export default NavBar
+export default AddSearchTest

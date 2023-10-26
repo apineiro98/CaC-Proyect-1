@@ -1,1 +1,84 @@
+/**! Custom **/
+:root {
+  --first-color: rgba(32, 32, 32, 1);
+  --first-alpha-color: rgba(32, 32, 32, 0.75);
+  --second-color: rgba(46, 204, 133, 1);
+  --second-alpha-color: rgba(46, 204, 133, 0.75);
+  --white-color: #fff;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-color: #000;
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --font: 'Rubik', sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+}
+/**! Custom **/
 
+/**! Reset **/
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+ 
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+/**! Reset **/
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
